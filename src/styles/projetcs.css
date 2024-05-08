@@ -1,0 +1,114 @@
+.h-screen {
+  height: 100vh; /* Définit la hauteur à 100% de la hauteur de la fenêtre du navigateur */
+  width: 100%;
+}
+
+.nav-color {
+  background: linear-gradient(
+    rgb(170, 170, 170) 0%,
+    rgb(110, 110, 110) 47%,
+    rgb(86, 86, 86) 100%
+  );
+  padding: 15px;
+}
+
+#nav-link {
+  position: relative;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#nav-link:hover {
+  color: black;
+}
+
+#nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 3px;
+  width: 0px;
+  background: white;
+  transition: width 0.2s;
+}
+
+#nav-link:hover:after {
+  width: 100%;
+}
+
+#all-category {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+}
+
+#box-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image {
+  position: relative;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin: auto;
+  height: 100vh;
+  object-fit:cover;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+  box-shadow: 0 0 20px 1px gray;
+  cursor: pointer;
+}
+
+#content:hover {
+  opacity: 1;
+}
+
+#content h1 {
+  font-size: 55px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.content > * {
+  transform: translateY(25px);
+  transition: transform 0.6s;
+}
+
+.content:hover > * {
+  transform: translateY(25px);
+  transition: transform 0.6s;
+}
+
+#category-description {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+#category-description:hover {
+  text-align: center;
+  text-shadow: 0px 10px 5px gray;
+}
