@@ -1,0 +1,35 @@
+.nav-color {
+  background: linear-gradient(
+    rgb(170, 170, 170) 0%,
+    rgb(110, 110, 110) 47%,
+    rgb(86, 86, 86) 100%
+  );
+  padding: 15px;
+}
+
+#nav-link {
+  position: relative;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#nav-link:hover {
+  color: black;
+}
+
+#nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 3px;
+  width: 0px;
+  background: white;
+  transition: width 0.2s;
+}
+
+#nav-link:hover:after {
+  width: 100%;
+}
