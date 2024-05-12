@@ -5,25 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Portfolio</title>
     <!-- LINK -->
-    <!-- Boostrap -->
     <link rel="stylesheet" href="./assets/styles/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/styles/bootstrap.min.css.map" />
-    <!-- Personnal -->
+    <link rel="stylesheet" href="./src/styles/nav.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
     <!-- SCRIPT -->
     <script src="./assets/scripts/bootstrap.min.js"></script>
-
     <script src="./assets/scripts/bootstrap.min.js.map"></script>
   </head>
   <body>
-    <main class="d-flex flex-column">
-      <div class="bg-primary">
-        <h1 class="text-center m-5">Page de garde</h1>
+    <header>
+      <nav class="nav nav-style sticky-top">
+        <a class="nav-item-style" href="./index.html">Home</a>
+        <a class="nav-item-style" href="./src/pages/project.html">Projets </a>
+        <a class="nav-item-style" href="./src/pages/contact.html">Moi</a>
+      </nav>
+    </header>
+    <main id="main">
+      <div id="pannel-right">
+        <p class="fs-1 text-center m-5 text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+          perferendis odio magnam deserunt. Non similique placeat ipsum dolorum
+          eos ab tenetur distinctio voluptates magnam, ut ea adipisci sequi modi
+          quis.
+        </p>
       </div>
-      <div class="text-center m-5">
-        <a href="./src/pages/project.html" class="text-center bg-warning"
-          >Mettre une animation dynamique au centre de la page</a
-        >
+
+      <div id="pannel-project-presentation" class="container">
+        <div class="wrapper">
+          <div class="image">
+            <img class="picture" src="./assets/img/webp/music.webp" alt="" />
+            <div class="content">
+              <h1 class="content-title">MUSIQUES</h1>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="image">
+            <img class="picture" src="./assets/img/webp/art.webp" alt="" />
+            <div class="content">
+              <a class="nav-link" href="./src/pages/web.html"
+                ><h1 class="content-title">ARTS</h1></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="image">
+            <img class="picture" src="./assets/img/jpg/coding.jpeg" alt="" />
+            <div class="content">
+              <h1 class="content-title">WEB</h1>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   </body>

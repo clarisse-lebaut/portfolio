@@ -1,35 +1,44 @@
-.nav-color {
-  background: linear-gradient(
-    rgb(170, 170, 170) 0%,
-    rgb(110, 110, 110) 47%,
-    rgb(86, 86, 86) 100%
-  );
-  padding: 15px;
+.nav-style {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 0 20px 1px black;
+  padding: 20px;
+  transition: 0.5s;
 }
 
-#nav-link {
+.nav-style:hover {
+  background-color: rgb(4, 4, 43);
+  box-shadow: 0 0 20px 1px black;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.nav-item-style {
   position: relative;
-  font-size: 25px;
+  font-size: 30px;
   color: white;
   text-decoration: none;
   padding: 10px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
-#nav-link:hover {
-  color: black;
+.nav-item-style:hover {
+  color: blue;
 }
 
-#nav-link::after {
+.nav-item-style::after {
   content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
   height: 3px;
   width: 0px;
-  background: white;
+  background: blue;
   transition: width 0.2s;
 }
 
-#nav-link:hover:after {
+.nav-item-style:hover:after {
   width: 100%;
 }
