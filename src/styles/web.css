@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(185, 185, 185);
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  margin: 20px;
+}
+
+.box-projects {
+  margin: 20px;
+  box-shadow: 5px 0 10px 2px gray;
+}
