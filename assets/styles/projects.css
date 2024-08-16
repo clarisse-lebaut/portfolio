@@ -1,21 +1,56 @@
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .main-container {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem; /* Réduit l'écart entre les éléments */
     justify-content: center;
+    padding: 0px; /* Réduit le padding pour plus d'espace */
   }
+
+  .main-card-container {
+    width: 100%; /* Assure que les cartes utilisent toute la largeur disponible */
+    margin: 0; /* Évite les marges latérales */
+    box-shadow: none; /* Supprime l'ombre pour éviter l'encombrement visuel */
+    transition: none; /* Supprime les transitions pour les petites tailles d'écran */
+  }
+
+  .main-card-container:hover {
+    box-shadow: none; /* Enlève l'ombre au survol sur mobile */
+    transform: none; /* Évite les effets de transformation sur mobile */
+  }
+
+  .main-card-pic {
+    width: 100%; /* Ajuste l'image à la largeur du conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+    padding: 0; /* Évite le padding pour les petits écrans */
+    display: block; /* Assure que l'image se comporte correctement dans son conteneur */
+    max-width: 100%; /* Évite que l'image dépasse la largeur du conteneur */
+    object-fit: cover; /* Assure que l'image couvre son conteneur sans déformation */
+  }
+
+  .main-card-text {
+    font-size: 16px; /* Réduit la taille de la police pour les petits écrans */
+  }
+
   .main-card-text:hover {
-    transform: none;
+    transform: none; /* Évite l'effet de survol sur mobile */
+  }
+
+  /* Désactiver l'effet de flou pour les petits écrans */
+  .main-container:has(.main-card-container:hover)
+    .main-card-container:not(:hover) {
+    filter: none;
   }
 }
 
 .main-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 3rem;
   padding: 50px;
 }
+
 .title-page-projects {
   margin: 50px;
   text-align: center;
@@ -24,31 +59,31 @@
 .main-card-container {
   background-color: white;
   margin: 1rem;
+  padding: 2rem;
   border-radius: 10px;
   box-shadow: inset 0 5px 10px 0 lightgray;
   transition: all 0.3s ease-in-out;
 }
+
 .main-card-container:hover {
   margin: 1rem;
   border-radius: 10px;
   box-shadow: 0 5px 10px 0 lightgray;
   transform: scale(1.1);
 }
-.main-container:has(.main-card-container:hover)
-  .main-card-container:not(:hover) {
-  filter: blur(5px);
-}
 
 .main-card-pic {
-  width: 400px;
+  margin: 0 auto;
+  width: 250px;
   height: auto;
-  padding: 20px;
+  padding-top: 20px;
   transition: filter 0.4s ease-in-out;
 }
 
 a {
   text-decoration: none;
 }
+
 .main-card-text {
   text-align: center;
   color: #4682a9;
@@ -56,6 +91,7 @@ a {
   font-size: 20px;
   transition: transform 0.3s ease-in-out;
 }
+
 .main-card-text:hover {
   color: #749bc2;
   transform: scale(1.3);

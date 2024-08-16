@@ -55,7 +55,7 @@
 }
 
 /* mobile version */
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 1064px) {
   .main-nav {
     flex-direction: column;
     width: 70%;
