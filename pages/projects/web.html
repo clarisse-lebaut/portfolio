@@ -1,581 +1,412 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebProject</title>
-    <!-- LINK -->
-    <link rel="stylesheet" href="../../assets/styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../assets/styles/bootstrap.min.css.map" />
-    <link rel="stylesheet" href="../styles/nav.css" />
-    <link rel="stylesheet" href="../styles/web.css" />
-    <!-- SCRIPT -->
-    <script src="../../assets/scripts/bootstrap.min.js"></script>
-    <script src="../../assets/scripts/bootstrap.min.js.map"></script>
-    <script src="../script/header.js" defer></script>
-    <script src="../script/modalPagination.js" defer></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/styles/global.css" />
+    <link rel="stylesheet" href="../../assets/styles/header.css" />
+    <link rel="stylesheet" href="../../assets/styles/nav-projects.css" />
+    <link rel="stylesheet" href="../../assets/styles/footer.css" />
+    <link rel="stylesheet" href="../../assets/styles/web.css" />
+
+    <script src="../../assets/scripts/web.js"></script>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="main-nav">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="menu">
+          <li class="main-li">
+            <a class="main-a" href="../../index.html">Home</a>
+          </li>
+          <li class="main-li">
+            <a class="main-a" href="../projects.html">Mes projets</a>
+          </li>
+          <li class="main-li">
+            <a class="main-a" href="../me.html">Qui suis-je ?</a>
+          </li>
+        </div>
+      </nav>
+    </header>
+
     <main>
-      <div class="m-5">
-        <h1>Projet de programmation réalisé à LaPlateforme_</h1>
-      </div>
-      <hr />
-      <div class="box text-center mt-3">
-        <!-- MatchaTea -->
-        <div class="box-projects card" style="width: 18rem">
-          <!-- Button trigger modal -->
-          <img
-            type="button"
-            class=""
-            src="../../assets/img/png/hibou.png"
-            alt=""
-            data-bs-toggle="modal"
-            data-bs-target="#MatchaTea"
-          />
-          <!-- Modal -->
-          <div
-            class="modal fade modal-lg"
-            id="MatchaTea"
-            tabindex="-1"
-            aria-labelledby="MatchaTeaLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="MatchaTeaLabel">
-                    Matcha Tea
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-footer m-auto">
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination"></ul>
-                    <div class="modal-body"></div>
-                    <button class="btn btn-primary prev-btn" type="button">
-                      Précédent
-                    </button>
-                    <button class="btn btn-primary next-btn" type="button">
-                      Suivant
-                    </button>
-                  </nav>
-                </div>
-              </div>
+      <h1 class="title-page-projects">WEB</h1>
+
+      <section class="main-container">
+        <div class="container">
+          <a href="../projects/web.html">
+            <div class="content">
+              <img class="pic" src="../../assets/img/category/web.png" alt="" />
+              <p class="text">Web</p>
             </div>
+          </a>
+        </div>
+        <div class="container">
+          <a href="../projects/music.html">
+            <div class="content">
+              <img
+                class="pic"
+                src="../../assets/img/category/musique.png"
+                alt=""
+              />
+              <p class="text">Musicaux</p>
+            </div>
+          </a>
+        </div>
+        <div class="container">
+          <a href="../projects/graphic.html">
+            <div class="content">
+              <img
+                class="pic"
+                src="../../assets/img/category/graphique.png"
+                alt=""
+              />
+              <p class="text">Graphiques</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="main-container-mobile">
+        <div class="container-mobile">
+          <a class="a-mobile" href="../projects/web.html">
+            <p class="text-mobile">Web</p>
+          </a>
+          <a class="a-mobile" href="../projects/music.html">
+            <p class="text-mobile">Musicaux</p>
+          </a>
+          <a class="a-mobile" href="../projects/graphic.html">
+            <p class="text-mobile">Graphique</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="filter">
+        <button class="filter-btn" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="Plateforme">
+          La Plateforme_
+        </button>
+        <button class="filter-btn" data-filter="Perso">Personnel</button>
+      </section>
+
+      <section class="filter-mobil">
+        <select id="filter-select">
+          <option value="all">Tous</option>
+          <option value="Plateforme">La Plateforme_</option>
+          <option value="Perso">Personnel</option>
+        </select>
+      </section>
+      <!-- PROJECTS -->
+      <section class="main-container-web" id="projects-container">
+        <div class="grid-item Perso">
+          <p class="details-projects-header">WatchMe</p>
+          <div class="details-projects-text">
+            <p>
+              Un site de présentation des différents styles et genres de montre
+              proposant un style luxueux et épuré afin d'avoir une navigation
+              fluide et agréable.
+            </p>
+            <p class="details-projects-text">PHP, MySQL, CSS</p>
+            <p class="details-projects-text">Trello, VS Code, Figma</p>
           </div>
-          <!-- Title project -->
-          <div class="card-body">
-            <p class="fs-3 text-center">Matcha Tea</p>
+          <div class="grid-item-content">
+            <video class="card-pic" controls>
+              <source
+                src="../../assets/web/watchme/watchme.mp4"
+                type="video/mp4"
+              />
+              Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+            <img
+              class="card-pic"
+              src="../../assets/web/watchme/watch1.png"
+              alt=""
+            />
+            <img
+              class="card-pic"
+              src="../../assets/web/watchme/watch2.png"
+              alt=""
+            />
           </div>
         </div>
-        <!-- Clicker -->
-        <div class="box-projects card" style="width: 18rem">
-          <!-- Button trigger modal -->
-          <img
-            type="button"
-            class=""
-            src="../../assets/img/png/hibou.png"
-            alt=""
-            data-bs-toggle="modal"
-            data-bs-target="#Clicker"
-          />
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="Clicker"
-            tabindex="-1"
-            aria-labelledby="ClickerLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="ClickerLabel">Clicker</h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-footer m-auto">
-                  <nav aria-label="Page navigation example">
-                    <div class="modal-body">
-                      <p>Utilisation de HTLM, CSS</p>
-                    </div>
-                    <button class="btn btn-primary prev-btn" type="button">
-                      Précédent
-                    </button>
-                    <button class="btn btn-primary next-btn" type="button">
-                      Suivant
-                    </button>
-                  </nav>
-                </div>
-              </div>
-            </div>
+      </section>
+      <section class="main-container-web" id="projects-container">
+        <div class="grid-item Plateforme">
+          <p class="details-projects-header">MatchaTea</p>
+          <div class="details-projects-text">
+            <p>
+              Ce projet e-commerce devait respecter les exigences d'une
+              maquette, tout en bénéficiant d'une liberté totale pour la
+              création de la charte graphique. Utilisant uniquement HTML5 et
+              CSS3, le focus s'est concentré sur le développement du frontend,
+              impliquant la conception et la création des pages utilisateurs
+              ainsi que des pages administrateur. L’identité numérique se
+              traduit par le choix de couleurs pastel et simple afin de rendre
+              l'identification moderne, efficace et rapide avec l'utilisation
+              d'icones, de graphiques, de nombres écrit en chiffres et des
+              illustrations.
+            </p>
+            <p class="details-projects-text">HTML5, CSS3</p>
+            <p class="details-projects-text">Trello, VS Code</p>
           </div>
-          <!-- Title project -->
-          <div class="card-body">
-            <p class="fs-3 text-center">Clicker</p>
+          <div class="grid-item-content">
+            <video class="card-pic" controls>
+              <source
+                src="../../assets/web/matchatea/matchatea.mp4"
+                type="video/mp4"
+              />
+              Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+            <img
+              class="card-pic"
+              src="../../assets/web/matchatea/matcha1.png"
+              alt=""
+            />
+            <img
+              class="card-pic"
+              src="../../assets/web/matchatea/matcha2.png"
+              alt=""
+            />
           </div>
         </div>
-        <!-- Memory -->
-        <div class="box-projects card" style="width: 18rem">
-          <!-- Button trigger modal -->
-          <img
-            type="button"
-            class=""
-            src="../../assets/img/png/hibou.png"
-            alt=""
-            data-bs-toggle="modal"
-            data-bs-target="#Memory"
-          />
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="Memory"
-            tabindex="-1"
-            aria-labelledby="MemoryLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="MemoryLabel">Memory</h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer m-auto">
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                          <span aria-hidden="true">&laquo;</span>
-                        </a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">1</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">2</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">3</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                          <span aria-hidden="true">&raquo;</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
+      </section>
+      <section class="main-container-web" id="projects-container">
+        <div class="grid-item Plateforme">
+          <p class="details-projects-header">Clicker</p>
+          <div class="details-projects-text">
+            <p>
+              Sur le thème du capitalisme, le développement de ce jeu Idle
+              permet aux utilisateurs de générer des ressources financière
+              fictives. Ces ressources augmentent le capital. L'ensemble du
+              design repose sur l'utilisation d'icônes et d'illustrations en
+              lien avec le monde monétaire. A l'aide d'un fichier JSON, nousa
+              avons crée une bande des données dans laquelles les ressources
+              sont traités. L'utilisation de Javascript permet le dynamisme de
+              l'application. Une grande écoute des évènements au clic permet de
+              suivre les dépenses et les achats dans le panel des items.
+            </p>
+            <p class="details-projects-text">Javascript, JSON, CSS3</p>
+            <p class="details-projects-text">Trello, VS Code</p>
           </div>
-          <!-- Title project -->
-          <div class="card-body">
-            <p class="fs-3 text-center">Memory</p>
+          <div class="grid-item-content">
+            <video class="card-pic" controls>
+              <source
+                src="../../assets/web/clicker/clicker.mp4"
+                type="video/mp4"
+              />
+              Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+            <img
+              class="card-pic"
+              src="../../assets/web/clicker/clicker1.png"
+              alt=""
+            />
+            <img
+              class="card-pic"
+              src="../../assets/web/clicker/clicker2.png"
+              alt=""
+            />
           </div>
         </div>
-        <!-- Cinetech -->
-        <div class="box-projects card" style="width: 18rem">
-          <!-- Button trigger modal -->
-          <img
-            type="button"
-            class=""
-            src="../../assets/img/png/hibou.png"
-            alt=""
-            data-bs-toggle="modal"
-            data-bs-target="#CineTech"
-          />
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="CineTech"
-            tabindex="-1"
-            aria-labelledby="CinetechLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="CinetechLabel">CineTech</h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer m-auto">
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                          <span aria-hidden="true">&laquo;</span>
-                        </a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">1</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">2</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">3</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                          <span aria-hidden="true">&raquo;</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
+      </section>
+      <section class="main-container-web" id="projects-container">
+        <div class="grid-item Plateforme">
+          <p class="details-projects-header">Memory</p>
+          <div class="details-projects-text">
+            <p>
+              Travaillez votre mémoire sur un jeu unique ! La découverte de
+              ReractJJ a permis la prise en main du concept de 'components' afin
+              de rendre plus manipulable le code.
+            </p>
+            <p class="details-projects-text">ReactJS, CSS3</p>
+            <p class="details-projects-text">Trello, VS Code, Photoshop</p>
           </div>
-          <!-- Title project -->
-          <div class="card-body">
-            <p class="fs-3 text-center">CineTech</p>
+          <div class="grid-item-content">
+            <video class="card-pic" controls>
+              <source
+                src="../../assets/web/memory/memory.mp4"
+                type="video/mp4"
+              />
+              Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+            <img
+              class="card-pic"
+              src="../../assets/web/memory/memory1.png"
+              alt=""
+            />
+            <img
+              class="card-pic"
+              src="../../assets/web/memory/memory2.png"
+              alt=""
+            />
           </div>
         </div>
-        <!-- Happy Meal -->
-        <div class="box-projects card" style="width: 18rem">
-          <!-- Button trigger modal -->
-          <img
-            type="button"
-            class=""
-            src="../../assets/img/png/hibou.png"
-            alt=""
-            data-bs-toggle="modal"
-            data-bs-target="#HappyMeal"
-          />
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="HappyMeal"
-            tabindex="-1"
-            aria-labelledby="HappyMealLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="HappyMealLabel">
-                    HappyMeal
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer m-auto">
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                          <span aria-hidden="true">&laquo;</span>
-                        </a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">1</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">2</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">3</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                          <span aria-hidden="true">&raquo;</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
+      </section>
+      <section class="main-container-web" id="projects-container">
+        <div class="grid-item Plateforme">
+          <p class="details-projects-header">Cinetech</p>
+          <div class="details-projects-text">
+            <p>
+              Grâce à la manipulation habile d'une API, la métode Fetch a permis
+              l'extraction d'une multitude d'informations. Ce site a été conçu
+              pour offrir aux utilisateurs une expérience fluide pour la
+              consultation de films et de séries, avec la possibilité d'accéder
+              aux détails complets de chaque titre d'un simple clic. Le choix
+              d'un design simple permet un repérage rapide et précis des
+              informations ! La découverte de l'instruction switch case à permis
+              une nouvelle utilisation des conditions pour pouvoir accéder au
+              travers de la récupération de données dans l'URL aux différentes
+              informations attendue dans l'affichage.
+            </p>
+            <p class="details-projects-text">Javascript, CSS3</p>
+            <p class="details-projects-text">API, Bootstrap, Trello, VS Code</p>
           </div>
-          <!-- Title project -->
-          <div class="card-body">
-            <p class="fs-3 text-center">HappyMeal</p>
+          <div class="grid-item-content">
+            <video class="card-pic" controls>
+              <source
+                src="../../assets/web/cinetech/cinetech.mp4"
+                type="video/mp4"
+              />
+              Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+            <img
+              class="card-pic"
+              src="../../assets/web/cinetech/cine1.png"
+              alt=""
+            />
+            <img
+              class="card-pic"
+              src="../../assets/web/cinetech/cine2.png"
+              alt=""
+            />
           </div>
         </div>
-        <!-- Python -->
-        <div class="box-projects card" style="width: 18rem">
-          <!-- Button trigger modal -->
-          <img
-            type="button"
-            class=""
-            src="../../assets/img/png/hibou.png"
-            alt=""
-            data-bs-toggle="modal"
-            data-bs-target="#PasswardGenerator"
-          />
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="PasswardGenerator"
-            tabindex="-1"
-            aria-labelledby="PasswardGeneratorLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="PasswardGeneratorLabel">
-                    Passward Generator
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer m-auto">
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                          <span aria-hidden="true">&laquo;</span>
-                        </a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">1</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">2</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">3</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                          <span aria-hidden="true">&raquo;</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
+      </section>
+      <section class="main-container-web" id="projects-container">
+        <div class="grid-item Plateforme">
+          <p class="details-projects-header">QuizNight</p>
+          <div class="details-projects-text">
+            <p>
+              Grâce à la manipulation habile de PHP et phpMyAdmin, cette
+              application de quiz permet la création de quizz avec questions &
+              réponses ! Plusieurs informations ont pu être extraites et
+              manipulés en utilisant des requêtes SQL pour offrir une expérience
+              fluide. Ce site a été conçu pour une expérience intuitive et
+              agréable lors de la création et de la consultation de quizzes,
+              avec la possibilité d'accéder aux détails de chaque quiz en un
+              simple clic. Il est également possible d'éditer chacun des
+              éléments. Le choix d'un design simple permet un repérage rapide et
+              précis des informations !
+            </p>
+            <p class="details-projects-text">PHP, MySQL, CSS3</p>
+            <p class="details-projects-text">
+              Bootstrap, Trello, VS Code, Figma
+            </p>
           </div>
-          <!-- Title project -->
-          <div class="card-body">
-            <p class="fs-3 text-center">Passward Generator</p>
+          <div class="grid-item-content">
+            <video class="card-pic" controls>
+              <source
+                src="../../assets/web/quizznight/quizznight.mp4"
+                type="video/mp4"
+              />
+              Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+            <img
+              class="card-pic"
+              src="../../assets/web/quizznight/quizz1.png"
+              alt=""
+            />
+            <img
+              class="card-pic"
+              src="../../assets/web/quizznight/quizz2.png"
+              alt=""
+            />
           </div>
         </div>
-        <!-- Bloom Petal -->
-        <div class="box-projects card" style="width: 18rem">
-          <!-- Button trigger modal -->
-          <img
-            type="button"
-            class=""
-            src="../../assets/img/png/hibou.png"
-            alt=""
-            data-bs-toggle="modal"
-            data-bs-target="#BloomPetal"
-          />
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="BloomPetal"
-            tabindex="-1"
-            aria-labelledby="BloomPetalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="BloomPetalLabel">
-                    BloomPetal
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer m-auto">
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                          <span aria-hidden="true">&laquo;</span>
-                        </a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">1</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">2</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">3</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                          <span aria-hidden="true">&raquo;</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Title project -->
-          <div class="card-body">
-            <p class="fs-3 text-center">BloomPetal</p>
-          </div>
-        </div>
-      </div>
-      <div class="m-5">
-        <h1>Projet de programmation personnel</h1>
-      </div>
-      <hr />
-      <div class="box text-center mt-3">
-        <!-- WatchMe -->
-        <div class="box-projects card" style="width: 18rem">
-          <!-- Button trigger modal -->
-          <img
-            type="button"
-            class=""
-            src="../../assets/img/png/hibou.png"
-            alt=""
-            data-bs-toggle="modal"
-            data-bs-target="#WatchMe"
-          />
-          <!-- Modal -->
-          <div
-            class="modal fade modal-lg"
-            id="WatchMe"
-            tabindex="-1"
-            aria-labelledby="WatchMeLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="WatchMeLabel">WatchMe</h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-footer m-auto">
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination"></ul>
-                    <div class="modal-body"></div>
-                    <button class="btn btn-primary prev-btn" type="button">
-                      Précédent
-                    </button>
-                    <button class="btn btn-primary next-btn" type="button">
-                      Suivant
-                    </button>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Title project -->
-          <div class="card-body">
-            <p class="fs-3 text-center">WatchMe</p>
-          </div>
-        </div>
-        <!-- Doctor Who-->
-        <div class="box-projects card" style="width: 18rem">
-          <!-- Button trigger modal -->
-          <img
-            type="button"
-            class=""
-            src="../../assets/img/png/hibou.png"
-            alt=""
-            data-bs-toggle="modal"
-            data-bs-target="#DoctorWho"
-          />
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="DoctorWho"
-            tabindex="-1"
-            aria-labelledby="DoctorWhoLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="DoctorWhoLabel">
-                    DoctorWho
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer m-auto">
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                          <span aria-hidden="true">&laquo;</span>
-                        </a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">1</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">2</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">3</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                          <span aria-hidden="true">&raquo;</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Title project -->
-          <div class="card-body">
-            <p class="fs-3 text-center">DoctorWho</p>
-          </div>
-        </div>
-        <div></div>
-      </div>
+      </section>
     </main>
+
+    <footer>
+      <nav class="main-footer-nav">
+        <section class="section-link">
+          <div>
+            <p class="title-footer-box"><b>NAVIGATION</b></p>
+            <li class="main-footer-li">
+              <a class="main-footer-a" href="../index.html">Home</a>
+            </li>
+            <li class="main-footer-li">
+              <a class="main-footer-a" href="../pages/projects.html"
+                >Mes projets</a
+              >
+            </li>
+            <li class="main-footer-li">
+              <a class="main-footer-a" href="../pages/me.html">Qui suis-je ?</a>
+            </li>
+          </div>
+          <div>
+            <p class="title-footer-box"><b>MES PROJETS</b></p>
+            <li class="main-footer-li">
+              <a class="main-footer-a" href="./projects/web.html">Web</a>
+            </li>
+            <li class="main-footer-li">
+              <a class="main-footer-a" href="./projects/music.html">Musicaux</a>
+            </li>
+            <li class="main-footer-li">
+              <a class="main-footer-a" href="./projects/graphic.html"
+                >Grapiques</a
+              >
+            </li>
+          </div>
+          <div>
+            <p class="title-footer-box"><b>QUI SUIS-JE ?</b></p>
+            <li class="main-footer-li">
+              <a class="main-footer-a" href="./me.html">Présentation</a>
+            </li>
+            <li class="main-footer-li">
+              <a class="main-footer-a" href="../files/cv.pdf" target="_blank"
+                >Mon CV</a
+              >
+            </li>
+          </div>
+        </section>
+        <section class="section-logo">
+          <a
+            href="https://linkedin.com/in/clarisse-le-baut-161499235"
+            target="_blank"
+          >
+            <img
+              class="icon"
+              src="../../assets/img/icons/linkedin.svg"
+              alt="logo linkedin"
+          /></a>
+          <a href="mailto:clarisse.lebaut@gmail.com" target="_blank">
+            <img
+              class="icon"
+              src="../../assets/img/icons/square-envelope-solid.svg"
+              alt="logo mail"
+              target="_blank"
+          /></a>
+          <a
+            class="link-footer"
+            href="https://github.com/clarisse-lebaut"
+            target="_blank"
+          >
+            <img
+              class="icon"
+              src="../../assets/img/icons/square-github.svg"
+              alt="logo github"
+          /></a>
+        </section>
+        <section class="copyright">
+          <p>&copy;2024 Portfolio de Clarisse LE BAUT. Tous droits réservés.</p>
+        </section>
+      </nav>
+    </footer>
   </body>
 </html>
