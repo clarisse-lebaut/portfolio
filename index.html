@@ -3,66 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Portfolio</title>
-    <!-- LINK -->
-    <link rel="stylesheet" href="./assets/styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/styles/bootstrap.min.css.map" />
-    <link rel="stylesheet" href="./src/styles/nav.css" />
-    <link rel="stylesheet" href="./src/styles/index.css" />
-    <!-- SCRIPT -->
-    <script src="./assets/scripts/bootstrap.min.js"></script>
-    <script src="./assets/scripts/bootstrap.min.js.map"></script>
+    <title>Accueil</title>
+    <link rel="stylesheet" href="./assets/styles/global.css" />
+
+    <link rel="stylesheet" href="./assets/styles/header.css" />
+
+    <link rel="stylesheet" href="./assets/styles/home.css" />
   </head>
   <body>
-    <header>
-      <nav class="nav nav-style sticky-top">
-        <a class="nav-item-style" href="./index.html">Home</a>
-        <!-- <a class="nav-item-style" href="./src/pages/project.html">Projets </a> -->
-        <a class="nav-item-style" href="./src/pages/about-me.html" >A propos</a>
+    <main>
+      <h1 class="title-page-projects">Bienvenue sur mon Portfolio !</h1>
+      <h2 class="title-page-projects">Que peut-on trouver ici?</h2>
+      <h2 class="title-page-projects">
+        Un unviers plus vaste à l'intérieur dont la seule limite est
+        l'imagination !
+      </h2>
+      <h2 class="title-page-projects">
+        Bien que cette sélection soit limitée, j'espère que vous trouverez mes
+        réalisations intéressantes. Merci de votre visite !
+      </h2>
+      <div class="container-avatar">
+        <img class="avatar" src="./assets/img/bimoji/hey.png" alt="avatar" />
+      </div>
+      <nav class="main-nav">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="menu">
+          <li class="main-li">
+            <a class="main-a" href="">Home</a>
+          </li>
+          <li class="main-li">
+            <a class="main-a" href="">Mes projets</a>
+          </li>
+          <li class="main-li">
+            <a class="main-a" href="">Qui suis-je ?</a>
+          </li>
+        </div>
       </nav>
-    </header>
-    <main id="main">
-      <div id="pannel-right">
-        <p class="fs-3 text-center m-5 text-white">
-          Je me présente : Clarisse, 27 ans, étudiante à <a class="link_school" href="#">La Plateforme_</a> en
-          Bachelor It spécialisation Développement Web ! La tête dans les
-          étoiles, j'aime faire preuve d'inventivité. Je suis toujours prête à
-          me dépasser pour donnée vie à de nouvelles idées !
-        </p>
-      </div>
-
-      <div id="pannel-project-presentation" class="container">
-        <div class="wrapper">
-          <div class="image">
-            <img class="picture" src="./assets/img/jpg/musique.jpg" alt="" />
-            <div class="content">
-              <a class="nav-link" href="./src/pages/music.html"
-                ><h1 class="content-title">MUSIQUE</h1></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="image">
-            <img class="picture" src="./assets/img/webp/art.webp" alt="" />
-            <div class="content">
-              <a class="nav-link" href="./src/pages/arts.html"
-                ><h1 class="content-title">ARTS</h1></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="image">
-            <img class="picture" src="./assets/img/jpg/coding.jpeg" alt="" />
-            <div class="content">
-              <a class="nav-link" href="./src/pages/web.html"
-                ><h1 class="content-title">PROGRAMMATION</h1></a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
     </main>
   </body>
 </html>

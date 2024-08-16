@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f6f4eb;
+}
+
+h1 {
+  font-family: "Finger Paint", sans-serif;
+}
+
+p,
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+/* *Charte and color
+  #F6F4EB --> beige
+  #91C8E4 --> bleu clair
+  #749BC2 --> bleu gris
+  #4682A9 --> bleu foncé
+*/

@@ -1,0 +1,156 @@
+[
+  {
+    "title": "My beast of Deep",
+    "format": "Audio",
+    "audio": "../assets/music/sound/deep.mp3",
+    "type": "Paroles",
+    "plateforme": "Suno"
+  },
+  {
+    "title": "Face à ce désert",
+    "format": "Audio",
+    "audio": "../assets/music/sound/desert.mp3",
+    "type": "Paroles",
+    "plateforme": "Suno"
+  },
+  {
+    "title": "Une jeunesse à moi",
+    "format": "Audio",
+    "audio": "../assets/music/sound/passé.mp3",
+    "type": "Paroles",
+    "plateforme": "Suno"
+  },
+  {
+    "title": "Sample Start",
+    "format": "Audio",
+    "audio": "../assets/music/sound/sample1.mp3",
+    "type": "Instrumental",
+    "plateforme": "Garageband"
+  },
+  {
+    "title": "Sample To Continue",
+    "format": "Audio",
+    "audio": "../assets/music/sound/sample2.mp3",
+    "type": "Instrumental",
+    "plateforme": "Garageband"
+  },
+  {
+    "title": "Sample to Be",
+    "format": "Audio",
+    "audio": "../assets/music/sound/sample5.mp3",
+    "type": "Instrumental",
+    "plateforme": "Garageband"
+  },
+  {
+    "title": "Mélancholie",
+    "format": "Audio",
+    "audio": "../assets/music/sound/Mélancholie.mp3",
+    "type": "Instrumental",
+    "plateforme": "Garageband"
+  },
+  {
+    "title": "Angry Christmas",
+    "format": "Audio",
+    "audio": "../assets/music/sound/christmas.mp3",
+    "type": "Instrumental",
+    "plateforme": "Garageband"
+  },
+  {
+    "title": "Quand le diable danse",
+    "format": "Audio",
+    "audio": "../assets/music/sound/devil.mp3",
+    "type": "Instrumental",
+    "plateforme": "Garageband"
+  },
+  {
+    "title": "Aurevoir",
+    "format": "Audio",
+    "audio": "../assets/music/sound/l1.mp3",
+    "type": "Instrumental",
+    "plateforme": "Garageband"
+  },
+  {
+    "title": "Métro, Boulot, Dodo",
+    "format": "Image",
+    "img1": "../assets/music/pictures/partitiongraphique1.png",
+    "img2": "../assets/music/pictures/partitiongraphique2.png",
+    "img3": "../assets/music/pictures/partitiongraphique3.png",
+    "img4": "../assets/music/pictures/partitiongraphique4.png",
+    "audio": "",
+    "description": "Partition graphique à but pédagogique, s'inspirant des réalisations de Cathy Berberian",
+    "type": "Graphique",
+    "plateforme": ""
+  },
+  {
+    "title": "Le rythme au trippes",
+    "format": "Image",
+    "img1": "../assets/music/pictures/basse1.png",
+    "img2": "../assets/music/pictures/basse2.png",
+    "audio": "../assets/music/sound/bass.mp3",
+    "type": "Instrumental",
+    "plateforme": "Partition"
+  },
+  {
+    "title": "Composer le monde",
+    "format": "Image",
+    "img1": "../assets/music/pictures/monde1.png",
+    "img2": "../assets/music/pictures/monde2.png",
+    "img3": "../assets/music/pictures/monde3.png",
+    "audio": "../assets/music/sound/l3.mp3",
+    "type": "Instrumental",
+    "plateforme": "Partition"
+  },
+  {
+    "title": "Minimalisme musical",
+    "format": "Image",
+    "img1": "../assets/music/pictures/451.png",
+    "img2": "../assets/music/pictures/452.png",
+    "img3": "../assets/music/pictures/453.png",
+    "img4": "../assets/music/pictures/454.png",
+    "audio": "../assets/music/sound/mini.mp3",
+    "type": "Instrumental",
+    "plateforme": "Partition"
+  },
+  {
+    "title": "Hauted House",
+    "format": "Image",
+    "img1": "../assets/music/pictures/hanté.png",
+    "audio": "../assets/music/sound/hanté.mp3",
+    "type": "Instrumental",
+    "plateforme": "Partition"
+  },
+  {
+    "title": "Come Back",
+    "format": "Image",
+    "img1": "../assets/music/pictures/find1.png",
+    "img2": "../assets/music/pictures/find3.png",
+    "img4": "",
+    "audio": "../assets/music/sound/Retrouvé.mp3",
+    "type": "Instrumental",
+    "plateforme": "Partition"
+  },
+  {
+    "title": "Comptine musicale",
+    "description": "Application musicale, lecteur de comptine, cette application à pour but de senesibliser à la découverte des notes de musique - réalisé en Licence Musicologie",
+    "format": "Image",
+    "img1": "../assets/music/pictures/comptine1.png",
+    "img2": "",
+    "img3": "../assets/music/pictures/comptine2.png",
+    "img4": "../assets/music/pictures/comptine5.png",
+    "audio": "",
+    "video": "../assets/music/video/comptine.mp4",
+    "type": "Application",
+    "plateforme": "MaxMsp"
+  },
+  {
+    "title": "SuperHero Theme",
+    "description": "Application musicale, enregistrement des Bandes Oringales via le logicial Garageband - réalisé en Licence Musicologie",
+    "format": "Image",
+    "img1": "../assets/music/pictures/hero1.png",
+    "img2": "",
+    "audio": "",
+    "video": "../assets/music/video/hero.mp4",
+    "type": "Application",
+    "plateforme": "MaxMsp"
+  }
+]
