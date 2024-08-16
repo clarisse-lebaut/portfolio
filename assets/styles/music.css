@@ -1,68 +1,94 @@
+/* hide mobil filter in desktop mode */
+.filter-mobil {
+  display: none;
+}
+
+/* title */
+.title-page-projects {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* container for all media */
+#audio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 5px;
+  justify-content: center;
+}
+/* Style de chaque élément de la galerie */
+.gallery-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 300px;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/* Style des titres */
+.gallery-title {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+/* Conteneur pour les images */
+.gallery-images {
+  margin-bottom: 15px;
+  display: block;
+  justify-content: center; /* Centrer les images horizontalement */
+  align-items: center;
+  gap: 1rem; /* Espacement entre les images */
+}
+/* Style des images pour s'adapter à la carte */
+.gallery-image {
+  max-width: 100%; /* Ajuster pour que les images ne débordent pas */
+  border-radius: 4px;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+/* Style des audios */
+.gallery-audio {
+  width: 100%;
+  margin-bottom: 15px;
+}
+/* Description de la carte */
+.gallery-description {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+/* Plateforme de la carte */
+.gallery-plateforme {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #555;
+}
+/* Style des vidéos pour s'adapter à la carte */
+.gallery-video {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 768px) {
   /* hide filter desktop in mobil mode  */
   .filter {
     display: none;
   }
 
-  /* title */
-  .title-page-projects {
-    text-align: center;
-    margin-top: 50px;
-  }
-
-  /* main container for music cards */
-  .main-container-music {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 0 25px;
-    margin-bottom: 50px;
-  }
-
-  /* cards style */
-  .card-container-music,
-  .card-container-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f8f8ff;
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 0 5px 15px 0px lightgray;
-    width: 100%;
-  }
-
-  /* picture in music cards */
-  .img-music {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-  }
-
-  /* pic container */
-  .container-img {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* music video */
-  .video-music {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
   /* mobil filter */
   .filter-mobil {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 25px;
@@ -83,75 +109,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* hide mobil filter in desktop mode */
-  .filter-mobil {
-    display: none;
-  }
-
-  /* title */
-  .title-page-projects {
-    text-align: center;
-    margin-top: 50px;
-  }
-
-  /* Main container for music cards */
-  .main-container-music {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 0 50px;
-    margin-bottom: 50px;
-  }
-
-  /* musics card style */
-  .card-container-music,
-  .card-container-image {
-    background-color: #f8f8ff;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 5px 15px 0px lightgray;
-    flex: 1;
-    margin: 0 auto;
-  }
-
-  /* pic in music cards*/
-  .img-music {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 10px;
-    transition: opacity 350ms ease-in-out, transform 350ms ease-in-out;
-  }
-
-  /* hover pic cards */
-  .card-container-image:has(.img-music:hover) .img-music:not(.img-music:hover) {
-    opacity: 0.3;
-    z-index: 1;
-  }
-  .img-music:hover {
-    transform: scale(1.5);
-    z-index: 1;
-  }
-
-  /* img container */
-  .container-img {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3.5rem;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* video */
-  .video-music {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
+  /* *FILTER */
   /* Filter pour desktop */
   .filter {
     display: flex;
@@ -159,7 +117,6 @@
     justify-content: center;
     margin: 50px;
   }
-
   /* button filter style */
   .filter-btn {
     border-radius: 50px;
@@ -170,7 +127,6 @@
     font-family: "Finger Paint", sans-serif;
     font-size: 15px;
   }
-
   /* effect for button filter */
   .filter-btn:hover {
     box-shadow: 0 5px 10px 0px lightgray;
