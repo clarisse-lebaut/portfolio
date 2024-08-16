@@ -1,0 +1,202 @@
+/* hide mobil filter in desktop mode */
+.filter-mobil {
+  display: none;
+}
+/* title */
+.title-page-projects {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  /* container for all media */
+  #audio-gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  /* Style de chaque élément de la galerie */
+  .gallery-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  /* Style des titres */
+  .gallery-title {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+  }
+  /* Conteneur pour les images */
+  .gallery-images {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centrer les images horizontalement */
+    gap: 1rem; /* Espacement entre les images */
+  }
+  /* Style des images pour s'adapter à la carte */
+  .gallery-image {
+    width: 100%;
+    border-radius: 4px;
+    object-fit: contain;
+    box-sizing: border-box;
+  }
+  /* Style des audios */
+  .gallery-audio {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  /* Style des vidéos pour s'adapter à la carte */
+  .gallery-video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+  /* Description de la carte */
+  .gallery-description {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+  }
+  /* Plateforme de la carte */
+  .gallery-plateforme {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #555;
+  }
+  /* hide filter desktop in mobil mode  */
+  .filter {
+    display: none;
+  }
+
+  /* mobil filter */
+  .filter-mobil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+  }
+
+  /* slect mobile style */
+  .filter-mobil select {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 5px 15px 0 lightgray;
+    background-color: white;
+    color: #333;
+    font-family: "Finger Paint", sans-serif;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* container for all media */
+  #audio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    gap: 2rem;
+  }
+  /* Style de chaque élément de la galerie */
+  .gallery-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  /* Style des titres */
+  .gallery-title {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+  }
+  /* Conteneur pour les images */
+  .gallery-images {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center; /* Centrer les images horizontalement */
+    align-items: center;
+    gap: 1rem; /* Espacement entre les images */
+  }
+  /* Style des images pour s'adapter à la carte */
+  .gallery-image {
+    width: 25rem;
+    border-radius: 4px;
+    object-fit: contain;
+    box-sizing: border-box;
+  }
+  /* Style des audios */
+  .gallery-audio {
+    width: 400px;
+    margin-bottom: 15px;
+  }
+  /* Style des vidéos pour s'adapter à la carte */
+  .gallery-video {
+    max-width: 60rem;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+  /* Description de la carte */
+  .gallery-description {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+  }
+  /* Plateforme de la carte */
+  .gallery-plateforme {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #555;
+  }
+  /* Filter pour desktop */
+  .filter {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin: 50px;
+  }
+  /* button filter style */
+  .filter-btn {
+    border-radius: 50px;
+    border: none;
+    padding: 20px;
+    background-color: #4682a9;
+    color: #f6f4eb;
+    font-family: "Finger Paint", sans-serif;
+    font-size: 15px;
+  }
+  /* effect for button filter */
+  .filter-btn:hover {
+    box-shadow: 0 5px 10px 0px lightgray;
+    cursor: pointer;
+  }
+  .filter-btn:active {
+    transform: translateY(5px);
+    cursor: pointer;
+  }
+}
