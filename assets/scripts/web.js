@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const filterButtons = document.querySelectorAll(".filter-btn");
   const projectItems = document.querySelectorAll(".grid-item");
 
+  // Filter desktop
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const filter = button.getAttribute("data-filter");
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Pour les filtres sur mobile
+  // Filter mobil
   const filterSelect = document.getElementById("filter-select");
   filterSelect.addEventListener("change", () => {
     const filter = filterSelect.value;

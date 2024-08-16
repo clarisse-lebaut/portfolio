@@ -155,26 +155,24 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   function displayItems(typeFilter, plateformeFilter) {
-    audioGallery.innerHTML = ""; // Effacer les éléments existants
+    audioGallery.innerHTML = "";
 
     cards.forEach((card) => {
-      // Vérification des filtres
       const typeMatches = typeFilter === "all" || card.type === typeFilter;
       const plateformeMatches =
         plateformeFilter === "all" || card.plateforme === plateformeFilter;
 
-      // Afficher la carte si les deux filtres correspondent
       if (typeMatches && plateformeMatches) {
         const container = document.createElement("div");
-        container.className = `gallery-item ${card.type || card.format}`; // Conteneur avec type ou format comme classe
+        container.className = `gallery-item ${card.type || card.format}`;
 
-        // Afficher le titre en haut
+        // Title in top
         const title = document.createElement("h4");
         title.className = "gallery-title";
         title.textContent = card.title;
         container.appendChild(title);
 
-        // Afficher les images si présentes
+        // If picture here --> display
         if (card.img1 || card.img2 || card.img3 || card.img4) {
           const imageContainer = document.createElement("div");
           imageContainer.className = "gallery-images";
@@ -191,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
           container.appendChild(imageContainer);
         }
 
-        // Afficher la vidéo si présente
+        // If video here --> display
         if (card.video) {
           const videoElement = document.createElement("video");
           videoElement.controls = true;
@@ -200,14 +198,13 @@ document.addEventListener("DOMContentLoaded", function () {
           container.appendChild(videoElement);
         }
 
-        // Afficher les audios si présents
+        // If audio here --> display
         if (card.audio) {
           const audioElement = document.createElement("audio");
           audioElement.controls = true;
           audioElement.src = card.audio;
           audioElement.className = "gallery-audio";
 
-          // Ajout de l'événement 'play' pour arrêter les autres audios
           audioElement.addEventListener("play", function () {
             stopAllAudiosExceptThis(audioElement);
           });
@@ -244,10 +241,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Afficher toutes les cartes au chargement
   displayItems("all", "all");
 
-  // Gestion des clics sur les boutons de filtre pour les types et plateformes
   document.querySelectorAll(".filter-btn").forEach((button) => {
     button.addEventListener("click", function () {
       const filterValue = this.dataset.filter;
@@ -276,7 +271,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Gestion du menu déroulant de filtre pour les types et plateformes
   document
     .getElementById("filter-type-select")
     .addEventListener("change", function () {

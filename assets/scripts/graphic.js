@@ -227,26 +227,26 @@ document.addEventListener("DOMContentLoaded", function () {
       description: "Anarchie",
     },
   ];
-  const imagePath = "../../assets/images/"; // Chemin vers votre dossier d'images
+  const imagePath = "../../assets/images/";
 
-  // Fonction pour afficher les images en fonction du filtre
+  // Function to make appear the pictures
   function displayImages(filter) {
-    imageGallery.innerHTML = ""; // Effacer les images existantes
+    imageGallery.innerHTML = "";
 
     images.forEach((image, index) => {
       if (filter === "all" || image.category === filter) {
         const container = document.createElement("div");
-        container.className = `gallery-item ${image.category}`; // Conteneur avec catégorie comme classe
+        container.className = `gallery-item ${image.category}`;
 
         const img = document.createElement("img");
         img.src = `${imagePath}${image.src}`;
         img.alt = `Image ${index + 1}`;
         img.className = "gallery-image";
-        img.setAttribute("data-filter", image.category); // Ajoute la catégorie comme data-filter
+        img.setAttribute("data-filter", image.category);
 
         const description = document.createElement("p");
         description.className = "gallery-description";
-        description.textContent = image.description; // Ajoute la description
+        description.textContent = image.description;
 
         container.appendChild(img);
         container.appendChild(description);
@@ -255,10 +255,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Afficher toutes les images au chargement
+  // Display all the picture in loading
   displayImages("all");
 
-  // Gestion des clics sur les boutons de filtre
   const filterButtons = document.querySelectorAll(".filter-btn");
   filterButtons.forEach((button) => {
     button.addEventListener("click", function () {
@@ -267,7 +266,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Gestion du menu déroulant de filtre
   const filterSelect = document.getElementById("filter-select");
   filterSelect.addEventListener("change", function () {
     const filter = this.value;
