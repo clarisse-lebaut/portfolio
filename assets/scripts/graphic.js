@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       description: "BD en 1 page - réalisé à Ynov",
     },
     {
-      src: "../graphic/BDStrip1.jpeg",
+      src: "../graphic/BDStrip.png",
       category: "bd",
       description:
         "BD en 2 pages, raconte les péripétie d'un personnage se rendant en cour - réalisé à Ynov",
