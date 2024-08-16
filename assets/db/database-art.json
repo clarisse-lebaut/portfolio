@@ -1,52 +1,5 @@
 [
   {
-    "path": "../assets/graphic/AlbumPochetteBack.jpg",
-    "description": "Face avant - Pochette de l'album CD pour 'Le Métalleux Geek', conçu sur Photoshop",
-    "type": "album"
-  },
-  {
-    "path": "../assets/graphic/AlbumPochetteFace.jpg",
-    "description": "Face arrière - Pochette de l'album CD pour Le Métalleux Geek, conçu sur Photoshop",
-    "type": "album"
-  },
-  {
-    "path": "../assets/graphic/BD1.jpeg",
-    "description": "BD en 1 page - réalisé à Ynov",
-    "type": "bd"
-  },
-  {
-    "path": "../assets/graphic/BDStrip2.jpeg",
-    "description": "BD en 2 pages, raconte les péripétie d'un personnage se rendant en cour - réalisé à Ynov",
-    "type": "bd"
-  },
-  {
-    "path": "../assets/graphic/BDStrip1.jpeg",
-    "description": "BD en 2 pages, raconte les péripétie d'un personnage qui devait se rendant en cour - réalisé à Ynov",
-    "type": "bd"
-  },
-
-  {
-    "path": "../assets/graphic/Capture.png",
-    "description": "Logo d'entrerpise avec Illustrator - réalisé sur commande",
-    "type": "illustrator"
-  },
-  {
-    "path": "../assets/graphic/Logo.jpeg",
-    "description": "Logo - réalisé à Ynov",
-    "type": "peinture"
-  },
-  {
-    "path": "../assets/graphic/flyers.jpg",
-    "description": "Flyer - Concert dans le cadre d'un projet de Création d'Action et de Recherche - rélaisé en licence de Musicologie",
-    "type": "flyer"
-  },
-
-  {
-    "path": "../assets/graphic/Bluecity.png",
-    "description": "Affiche vectoriel réalisé sur illustrator pour prendre en main les outils de perspective",
-    "type": "illustrator"
-  },
-  {
     "path": "../assets/graphic/illustration.jpeg",
     "description": "Illustration pour un conte pour enfants - réalisé à Ynov",
     "type": "peinture"
