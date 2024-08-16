@@ -127,7 +127,7 @@
     align-items: center;
     text-align: center;
   }
-  /* Style des titres */
+  /* Titles style */
   .gallery-title {
     margin-bottom: 15px;
     font-size: 1.2em;
@@ -135,39 +135,38 @@
     text-align: center;
     width: 100%;
   }
-  /* Conteneur pour les images */
+  /* Images container */
   .gallery-images {
     margin-bottom: 15px;
     display: flex;
-    justify-content: center; /* Centrer les images horizontalement */
+    justify-content: center; 
     align-items: center;
-    gap: 1rem; /* Espacement entre les images */
+    gap: 1rem; 
   }
-  /* Style des images pour s'adapter à la carte */
   .gallery-image {
     width: 25rem;
     border-radius: 4px;
     object-fit: contain;
     box-sizing: border-box;
   }
-  /* Style des audios */
+  /* Audios style */
   .gallery-audio {
     width: 400px;
     margin-bottom: 15px;
   }
-  /* Style des vidéos pour s'adapter à la carte */
+  /* Video style */
   .gallery-video {
     max-width: 60rem;
     height: auto;
     margin-bottom: 15px;
     border-radius: 4px;
   }
-  /* Description de la carte */
+  /* Card description */
   .gallery-description {
     margin-bottom: 10px;
     font-size: 0.9em;
   }
-  /* Plateforme de la carte */
+  /* plateforme */
   .gallery-plateforme {
     font-size: 0.9em;
     font-weight: bold;

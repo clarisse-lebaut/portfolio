@@ -39,7 +39,7 @@
   .gallery-description {
     color: #333;
     text-align: center;
-    width: 100%; /* Assure que la description ne dépasse pas le conteneur */
+    width: 100%;
   }
   /* *FILTER */
 
@@ -104,7 +104,7 @@
   .gallery-description {
     color: #333;
     text-align: center;
-    width: 100%; /* Assure que la description ne dépasse pas le conteneur */
+    width: 100%;
   }
   /* *FILTER */
   .filter {
