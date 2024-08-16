@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       src: "../graphic/flyers.jpg",
-      category: "flyers",
+      category: "flyer",
       description:
         "Flyer - Concert dans le cadre d'un projet de Création d'Action et de Recherche - rélaisé en licence de Musicologie",
     },
