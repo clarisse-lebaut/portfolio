@@ -35,3 +35,9 @@ body {
     filter: drop-shadow(0 0 2rem #91c8e4);
   }
 }
+
+@media screen and (max-width: 426px) {
+  body {
+    margin: 10px;
+  }
+}

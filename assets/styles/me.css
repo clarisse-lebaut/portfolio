@@ -146,9 +146,26 @@
 }
 .card-formation {
   background-color: white;
+  width: 20rem;
+  height: 35rem;
   padding: 20px;
   border-radius: 20px;
   box-shadow: lightgray 0 5px 15px 0;
+  overflow-y: scroll;
+} /* Custom scrollbar for WebKit browsers */
+.card-formation::-webkit-scrollbar {
+  width: 10px;
+}
+.card-formation::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 0;
+}
+.card-formation::-webkit-scrollbar-thumb {
+  background: #979797;
+  border-radius: 0;
+}
+.card-formation::-webkit-scrollbar-thumb:hover {
+  background: #91c8e4;
 }
 .date-formation,
 .date-experience {
@@ -240,17 +257,19 @@
   transform: translateY(5px);
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
   .cv-ul {
     flex-direction: column;
     justify-content: center;
     text-align: center;
     gap: 25px;
   }
-
   .cv-li {
     border-radius: 10px;
     padding: 5px;
+  }
+  .a-contact {
+    margin: 0 auto;
   }
 
   /* *PRESENTATION CARD */
@@ -258,8 +277,8 @@
     flex-direction: column;
   }
   .card-description-me {
-    text-align: center;
-    padding: 0 3.5rem 3.5rem 3.5rem;
+    text-align: left;
+    width: 100%;
     border-radius: 0;
   }
   .avatar {
@@ -292,9 +311,15 @@
   /* *FORMATION CARD */
   .formation {
     display: flex;
+    align-items: center;
     flex-direction: column;
     margin: 0 -2.5rem 0 -2.5rem;
     gap: 2rem;
+  }
+  .card-formation {
+    max-width: 100%;
+    height: 100%;
+    overflow: none;
   }
 
   /* *EXPERIENCE CARD */

@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (card.plateforme) {
           const plateforme = document.createElement("p");
           plateforme.className = "gallery-plateforme";
-          plateforme.textContent = `Plateforme: ${card.plateforme}`;
+          plateforme.textContent = `Plateforme : ${card.plateforme}`;
           container.appendChild(plateforme);
         }
 

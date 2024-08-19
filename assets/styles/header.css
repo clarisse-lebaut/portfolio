@@ -61,6 +61,9 @@
     width: 70%;
     padding: 10px;
   }
+  .main-a {
+    transition: none;
+  }
   .hamburger {
     display: flex;
   }

@@ -3,228 +3,283 @@ document.addEventListener("DOMContentLoaded", function () {
   const images = [
     {
       src: "../graphic/AlbumPochetteBack.jpg",
-      category: "illustration",
-      description:
-        "Face arrière - Pochette de l'album CD pour 'Le Métalleux Geek', conçu sur Photoshop",
+      category: "logiciel",
+      description: "Couverture Album CD 'Le Métalleux Geek' (face)",
+      materiel: "Photoshop",
+      realisation: "sur demande",
     },
     {
       src: "../graphic/AlbumPochetteFace.jpg",
-      category: "illustration",
-      description:
-        "Face avant - Pochette de l'album CD pour 'Le Métalleux Geek', conçu sur Photoshop",
+      category: "logiciel",
+      description: "Couverture Album CD 'Le Métalleux Geek' (dos)",
+      materiel: "Photoshop",
+      realisation: "sur demande",
     },
     {
       src: "../graphic/BD1.jpeg",
-      category: "bd",
-      description: "BD en 1 page - réalisé à Ynov",
+      category: "crayon",
+      description: "BD - 1 page",
+      materiel: "Crayon de couleur, scénarisation",
+      realisation: "à Ynov",
     },
     {
       src: "../graphic/BDStrip.png",
-      category: "bd",
+      category: "crayon",
       description:
-        "BD en 2 pages, raconte les péripétie d'un personnage se rendant en cour - réalisé à Ynov",
+        "BD strip des péripéties d'un personnage se rendant en cour - 2 pages",
+      materiel: "Crayon HB & 2B, scénarisation",
+      realisation: "à Ynov",
     },
     {
-      src: "../graphic/Capture.png",
-      category: "illustrator",
-      description: "Logo d'entrerpise avec Illustrator - réalisé sur commande",
+      src: "../graphic/voiture.png",
+      category: "logiciel",
+      description: "Logo d'entrerpise",
+      materiel: "Illustrator",
+      realisation: "sur demande",
     },
     {
       src: "../graphic/Logo.jpeg",
       category: "peinture",
-      description: "Logo d'entrerpise avec Illustrator - réalisé sur commande",
+      description: "Logo d'entreprise",
+      materiel: "Peinture acrylique",
+      realisation: "à Ynov",
     },
     {
       src: "../graphic/flyers.jpg",
-      category: "flyer",
+      category: "logiciel",
       description:
-        "Flyer - Concert dans le cadre d'un projet de Création d'Action et de Recherche - rélaisé en licence de Musicologie",
+        "Flyer pour un concert dans le cadre d'un projet de Création d'Action et de Recherche",
+      materiel: "Photoshop",
+      realisation: "en Licence de Musicologie",
     },
     {
       src: "../graphic/Bluecity.png",
-      category: "illustrator",
-      description:
-        "Affiche vectoriel réalisé sur illustrator pour prendre en main les outils de perspective",
+      category: "logiciel",
+      description: "Affiche vectoriel",
+      materiel: "Illustrator",
+      realisation:
+        "initiative personnelle\nprise en main des outils de perspective",
     },
     {
-      src: "../graphic/illustration.jpeg",
+      src: "../graphic/illustration.png",
       category: "peinture",
-      description: "Illustration pour un conte pour enfants - réalisé à Ynov",
+      description: "Illustration d'un conte pour enfants ",
+      materiel: "Peinture acrylique",
+      realisation: "à Ynov",
     },
-
     {
       src: "../graphic/Batman.png",
-      category: "illustrator",
-      description: "Batman minimaliste - image vectoriel conçu sur Illustrator",
+      category: "logiciel",
+      description: "Batman minimaliste",
+      materiel: "Illustrator",
+      realisation: "initiative personnelle\ntravail des images vectoriel",
+    },
+    {
+      src: "../graphic/Joker.png",
+      category: "logiciel",
+      description: "Joker minimaliste",
+      materiel: "Illustrator",
+      realisation: "initiative personnelle\ntravail des images vectoriel",
     },
     {
       src: "../graphic/Superman.png",
-      category: "illustrator",
-      description:
-        "Superman minimaliste - image vectoriel conçu sur Illustrator",
-    },
-    {
-      src: "../graphic/GreenLantern.png",
-      category: "illustrator",
-      description:
-        "Green Lantern minimaliste - image vectoriel conçu sur Illustrator",
-    },
-    {
-      src: "../graphic/Flash.png",
-      category: "illustrator",
-      description: "Flash minimaliste -image vectoriel conçu sur Illustrator",
-    },
-
-    {
-      src: "../graphic/Joker.png",
-      category: "illustrator",
-      description:
-        "Le Joker minimaliste - image vectoriel conçu sur Illustrator",
+      category: "logiciel",
+      description: "Superman minimaliste",
+      materiel: "Illustrator",
+      realisation: "initiative personnelle\ntravail des images vectoriel",
     },
     {
       src: "../graphic/Luthor.png",
-      category: "illustrator",
-      description:
-        "Lex Luthor minimaliste - image vectoriel conçu sur Illustrator",
+      category: "logiciel",
+      description: "Lex Luthor minimaliste",
+      materiel: "Illustrator",
+      realisation: "initiative personnelle\ntravail des images vectoriel",
     },
     {
-      src: "../graphic/Sinestro.png",
-      category: "illustrator",
-      description:
-        "Sinistro minimaliste - image vectoriel conçu sur Illustrator",
+      src: "../graphic/Flash.png",
+      category: "logiciel",
+      description: "Flash minimaliste",
+      materiel: "Illustrator",
+      realisation: "initiative personnelle\ntravail des images vectoriel",
     },
     {
       src: "../graphic/thwane.png",
-      category: "illustrator",
-      description:
-        "Négatif de Flash minimaliste - image vectoriel conçu sur Illustrator",
+      category: "logiciel",
+      description: "Reverse Flash minimaliste",
+      materiel: "Illustrator",
+      realisation: "initiative personnelle\ntravail des images vectoriel",
+    },
+    {
+      src: "../graphic/Sinestro.png",
+      category: "logiciel",
+      description: "Sinistro minimaliste",
+      materiel: "Illustrator",
+      realisation: "initiative personnelle\ntravail des images vectoriel",
+    },
+    {
+      src: "../graphic/GreenLantern.png",
+      category: "logiciel",
+      description: "Green Lantern minimaliste",
+      materiel: "Illustrator",
+      realisation: "initiative personnelle\ntravail des images vectoriel",
     },
     {
       src: "../graphic/Pastel.jpeg",
       category: "pastel",
-      description:
-        "Pointillisme du système solaire, travail de la pastel grasse",
-    },
-    {
-      src: "../graphic/chaussures.png",
-      category: "croquis",
-      description:
-        "Croquis de chaussures, travail des proportions et colorisation en design de produit - réalisé à Ynov",
+      description: "Pointillisme du système solaire",
+      materiel: "Pastel grasse",
+      realisation: "initiative personnelle\ntravail du pointillisme",
     },
     {
       src: "../graphic/Sac.png",
-      category: "croquis",
-      description:
-        "Croquis sac à dos, travail des proportions et de colorisation en design de produit - réalisé à Ynov",
+      category: "feutre",
+      description: "Croquis sac à dos\nDesign de produit",
+      materiel: "Crayon HB, feutres",
+      realisation: "à Ynov",
     },
-
+    {
+      src: "../graphic/chaussures.png",
+      category: "feutre",
+      description: "Croquis de chaussures\nDesign de produit",
+      materiel: "Crayon HB, feutres",
+      realisation: "à Ynov",
+    },
     {
       src: "../graphic/usb.png",
-      category: "croquis",
-      description:
-        "Croquis clé USB, travail des proportions et de colorisation en design de produit - réalisé à Ynov",
+      category: "feutre",
+      description: "Croquis clé USB\nDesign de produit",
+      materiel: "Crayon HB, feutres",
+      realisation: "à Ynov",
     },
     {
       src: "../graphic/NYB.png",
-      category: "illustrator",
-      description:
-        "Illustration vectoriel sur illustrator d'un bâtiment fictif - utilisation des outils de perspective",
+      category: "logiciel",
+      description: "Illustration vectoriel d'un bâtiment fictif",
+      materiel: "Illustrator",
+      realisation:
+        "initiative personnelle\nutilisation des outils de perspective",
     },
     {
       src: "../graphic/oiseau.jpeg",
       category: "crayon",
-      description:
-        "Crayonnage Cygne, travail de l'ombrage et des relfets - réalisé sur commande",
+      description: "Crayonnage Cygne",
+      materiel: "Crayon HB, estompe",
+      realisation:
+        "initiative personnelle\ntravail de l'ombrage et des relfets",
     },
     {
       src: "../graphic/Zoro.jpeg",
       category: "crayon",
-      description: "Crayonnage personnage Zoro - travail de l'ombrage",
+      description: "Crayonnage personnage Zoro",
+      materiel: "Crayon HB, estompe",
+      realisation: "initiative personnelle\ntravail de l'ombrage",
     },
     {
       src: "../graphic/Luffy.jpeg",
       category: "crayon",
-      description: "Crayonnage personnage Luffy - travail de l'ombrage",
+      description: "Crayonnage personnage Luffy",
+      materiel: "Crayon HB, estompe",
+      realisation: "initiative personnelle\ntravail de l'ombrage",
     },
     {
       src: "../graphic/Luffy2.jpeg",
       category: "crayon",
-      description: "Crayonnage personnage Luffy - travail de l'ombrage",
+      description: "Crayonnage personnage Luffy",
+      materiel: "Crayon HB, estompe",
+      realisation: "initiative personnelle\ntravail de l'ombrage",
     },
     {
       src: "../graphic/Natsu.jpeg",
       category: "crayon",
-      description: "Crayonnage personnage Natsu - travail de l'ombrage",
+      description: "Crayonnage personnage Natsu",
+      materiel: "Crayon HB, estompe",
+      realisation: "initiative personnelle\ntravail de l'ombrage",
     },
     {
       src: "../graphic/Aquarelle.jpeg",
       category: "aquarelle",
-      description:
-        "Colorisation d'un pikachu aviateur - travail de l'aquarelle",
+      description: "Colorisation d'un pikachu aviateur",
+      materiel: "Feutres, Aquarelles",
+      realisation: "initiative personnelle\ntravail de l'aquarelle",
     },
     {
       src: "../graphic/Picsou.jpeg",
       category: "feutre",
-      description: "Colorisation de Picsou - travail du feutre",
+      description: "Colorisation de Picsou",
+      materiel: "Feutres",
+      realisation: "initiative personnelle\ntravail du feutre",
     },
     {
       src: "../graphic/Cygne.jpg",
       category: "bombe",
       description:
-        "Travail au spray, gestion des couloirs et manipulation des pochoirs",
+        "Illustration 'La Princesse et le Cygne'\nColorisaiton, Manipulation de pochoirs",
+      materiel: "Bombes en spray",
+      realisation: "sur demande",
     },
     {
       src: "../graphic/Univers2.jpeg",
       category: "bombe",
-      description:
-        "Travail au spray, gestion des couloirs et manipulation des pochoirs",
+      description: "Univers\nColorisaiton, Manipulation de pochoirs",
+      materiel: "Bombes en spray",
+      realisation: "initiative personnelle\ntravail de colorisation en spray",
     },
     {
       src: "../graphic/Univers3.jpeg",
       category: "peinture",
-      description:
-        "Travail de la peinture acrylique et de la texture avec des éponges",
+      description: "Univers : Terre VS Mars",
+      materiel: "Peinture acrylique, Eponge, Carton",
+      realisation:
+        "initiative personnelle\ntravail des textures avec de le peinture",
     },
     {
       src: "../graphic/Univers4.jpeg",
       category: "peinture",
       description:
         "Travail de la peinture acrylique et de la texture avec des éponges",
+      description: "Mer rouge à la double Lune",
+      materiel: "Peinture acrylique, Eponge, Carton",
+      realisation:
+        "initiative personnelle\ntravail des textures avec de le peinture",
     },
     {
       src: "../graphic/Univers5.jpeg",
       category: "peinture",
-      description:
-        "Travail de la peinture acrylique et de la texture avec des éponges",
+      description: "Ville bleuté",
+      materiel: "Peinture acrylique, Eponge, Carton",
+      realisation:
+        "initiative personnelle\ntravail des textures avec de le peinture",
     },
     {
       src: "../graphic/mignion.jpg",
       category: "peinture",
-      description:
-        "Illustration, travail de la peinture acrylique - réalisé sur demande",
+      description: "Illustration 'Les Mignons à Sydney'",
+      materiel: "Peinture acrylique",
+      realisation: "sur demande",
     },
-
     {
       src: "../graphic/Anarchie.jpg",
       category: "peinture",
-      description: "Illustration, thème de l'anarchie - réalisé sur demande",
+      description: "Illustration sur le thème de l'Anarchie",
+      materiel: "Peinture acrylique",
+      realisation: "sur demande",
     },
     {
       src: "../graphic/Savane.jpg",
       category: "peinture",
-      description:
-        "Travail de la peinture acrylique, cercle crhomatique et travail de dégradé",
+      description: "Savane",
+      materiel: "Peinture acrylique",
+      realisation:
+        "initiative personnelle\ntravail de degradé chromatique en peinture",
     },
     {
       src: "../graphic/baymax.jpg",
       category: "peinture",
-      description:
-        "Baymax, travail des couleurs associé avec une émotion, création d'un élement amovible afin de les positionnée dans l'odre souhaité (scotch/scrath placé sur les 4 rebords des toiles)",
-    },
-    {
-      src: "../graphic/Anarchie.jpg",
-      category: "portrait",
-      description: "Anarchie",
+      description: "Baymax chez Vice Versa",
+      materiel:
+        "Peinture acrylique, Toile, Pochoirs, Scotch/Scratch (placé sur les 4 rebords des toiles)",
+      realisation:
+        "initiative personnelle\ntravail des couleurs, éléments amovible",
     },
   ];
   const imagePath = "../../assets/images/";
@@ -246,10 +301,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const description = document.createElement("p");
         description.className = "gallery-description";
-        description.textContent = image.description;
+        description.innerHTML = image.description.replace(/\n/g, "<br>");
+
+        const materiel = document.createElement("p");
+        materiel.className = "gallery-materiel";
+        materiel.innerHTML = `Matériel : ${image.materiel.replace(
+          /\n/g,
+          "<br>"
+        )}`;
+
+        const realisation = document.createElement("p");
+        realisation.className = "gallery-realisation";
+        realisation.innerHTML = `Réalisation : ${image.realisation.replace(
+          /\n/g,
+          "<br>"
+        )}`;
 
         container.appendChild(img);
         container.appendChild(description);
+        container.appendChild(materiel);
+        container.appendChild(realisation);
         imageGallery.appendChild(container);
       }
     });
